@@ -14,43 +14,54 @@ document.getElementById('name2').innerHTML = p2.getName()
 
 
 function lanzar(){
-    var tiro = d.getVal()
     var np = 0
 
     while (getWinner(p1) || getWinner(p2))
     {
+        var tiro = d.getVal()
+
         if (orden) {
             switch (tiro) {
                 case 1:
                     np = p1.getPosicion() + 1
                     p1.setPosicion(np)
+                    break
                 case 2:
                     np = p1.getPosicion() + 1
                     p1.setPosicion(np)
+                    break
                 case 3:
                     np = p1.getPosicion() - 1
                     p1.setPosicion(np)
+                    break
                 case 4:
                     np = p1.getPosicion() - 1
                     p1.setPosicion(np)
+                    break
                 case 5:
                     np = p1.getPosicion() + 2
                     p1.setPosicion(np)
+                    break
                 case 6:
                     np = p1.getPosicion() + 2
                     p1.setPosicion(np)
+                    break
                 case 7:
                     np = p1.getPosicion() + 2
                     p1.setPosicion(np)
+                    break
                 case 8:
                     np = p1.getPosicion() + 2
                     p1.setPosicion(np)
+                    break
                 case 9:
                     np = p1.getPosicion() + 3
                     p1.setPosicion(np)
+                    break
                 case 10:
                     np = p1.getPosicion() + 3
                     p1.setPosicion(np)
+                    break
             }
 
             let div = document.createElement("div");
@@ -65,39 +76,51 @@ function lanzar(){
             {
                 alert(`Winner: ${p1.getName()}`)
                 location.reload()
+
             }
-        } else {
+        } 
+        else {
             switch (tiro) {
                 case 1:
                     np = p2.getPosicion() + 1
                     p2.setPosicion(np)
+                    break
                 case 2:
                     np = p2.getPosicion() + 1
                     p2.setPosicion(np)
+                    break
                 case 3:
                     np = p2.getPosicion() - 1
                     p2.setPosicion(np)
+                    break
                 case 4:
                     np = p2.getPosicion() - 1
                     p2.setPosicion(np)
+                    break
                 case 5:
                     np = p2.getPosicion() + 2
                     p2.setPosicion(np)
+                    break
                 case 6:
                     np = p2.getPosicion() + 2
                     p2.setPosicion(np)
+                    break
                 case 7:
                     np = p2.getPosicion() + 2
                     p2.setPosicion(np)
+                    break
                 case 8:
                     np = p2.getPosicion() + 2
                     p2.setPosicion(np)
+                    break
                 case 9:
                     np = p2.getPosicion() + 3
                     p2.setPosicion(np)
+                    break
                 case 10:
                     np = p2.getPosicion() + 3
                     p2.setPosicion(np)
+                    break
             }
 
             let div = document.createElement("div");
