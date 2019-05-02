@@ -1,11 +1,11 @@
-//let player1 = prompt('Ingrese nombre del primer jugador', '')
-//let player2 = prompt('Ingrese nombre del segundo jugador', '')
+let player1 = prompt('Ingrese nombre del primer jugador', '')
+let player2 = prompt('Ingrese nombre del segundo jugador', '')
 
 let boton = document.getElementById('b1')
 boton.addEventListener('click', lanzar)
 
-let p1 = new Persona('player1')
-let p2 = new Persona('player2')
+let p1 = new Persona(player1)
+let p2 = new Persona(player2)
 let d = new Dado()
 let orden = true
 
@@ -64,7 +64,7 @@ function lanzar(){
             if(getWinner(p1) === false)
             {
                 alert(`Winner: ${p1.getName()}`)
-                break
+                location.reload()
             }
         } else {
             switch (tiro) {
@@ -110,7 +110,7 @@ function lanzar(){
 
             if (getWinner(p2) === false) {
                 alert(`Winner: ${p2.getName()}`)
-                break
+                location.reload()
             }
         }
     }
