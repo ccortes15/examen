@@ -1,7 +1,7 @@
 class Persona{
     constructor(name){
         this.name  = name
-        this.posicion = posicion
+        this.posicion = 0
     }
 
     getName(){
